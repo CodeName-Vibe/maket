@@ -148,11 +148,12 @@
     border: 2px solid #3c4147;
     border-radius: 5%;
     background-color: rgba(0,0,0,0);
+    padding-left: 6px;
+    padding-right: 35px;
 }
 .search-bar input::placeholder {
     color: #a4aead;
     font-weight: 500;
-    padding-left: 6px;
 }
 
 
@@ -160,6 +161,10 @@
 /* -=-=-=-=-=-=-==-=<< MAIN >>-=-=-=-=-=-=-=-=- */
 main {
     font-family: 'Quattrocento Sans', sans-serif;
+}
+main>div+div {
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 /* -=-=-=-=-=-=-==-=<< MAIN_MARKETPLACE >>-=-=-=-=-=-=-=-=- */
 .marketplace {
@@ -178,7 +183,6 @@ main {
 [class*="headline-"] {
     border-left: solid 10px white;
     padding-left: 14px;
-    margin-top: 80px;
     margin-bottom: 60px;
 }
 .headline-light {
@@ -240,9 +244,8 @@ main {
 }
 /* -=-=-=-=-=-=-==-=<< MAIN_MODEST >>-=-=-=-=-=-=-=-=- */
 .modest {
-    width: 100%;
-    height: 612px;
     background-color: white;
+    border-bottom: 1px solid #dde1e4;
 }
 .headline-dark {
     color: #292f36;
@@ -289,17 +292,9 @@ main {
 .modest-tittle:first-child {
     margin-top: 5px;
 }
-
-.line {
-    background-color: #dde1e4;
-    height: 1px;
-    width: 100%;
-    margin-bottom: 1px;
-}
 /* -=-=-=-=-=-=-==-=<< MAIN_TEAM >>-=-=-=-=-=-=-=-=- */
 .team {
     background-color: white;
-    padding-bottom: 100px;
 }
 
 [class*="image-team-"] {
@@ -371,9 +366,6 @@ main {
 }
 /* -=-=-=-=-=-=-==-=<< MAIN_LOVELY >>-=-=-=-=-=-=-=-=- */
 .lovely {
-    padding-top: 80px;
-    width: 100%;
-    height: 900px;
     background-color: #3a454d;
 }
 .lovely .headline-light {
@@ -430,8 +422,13 @@ main {
     display: block;
 }
 
+.button-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
 .lovely-button {
-    position: relative;
     width: 151px;
     height: 44px;
     color: white;
@@ -441,9 +438,6 @@ main {
     border-radius:4px;
     user-select: none;
     cursor: pointer;
-    margin-top: 60px;
-    left: 50%;
-    margin-left: -75px;
 }
 .lovely-button:hover {
     background-color: #23b7a4;
@@ -457,7 +451,6 @@ main {
     flex-wrap: wrap;
     align-content: space-between;
     text-align: center;
-    margin-bottom: 94px;
 }
 .what .little-text {
     margin-bottom: 64px;;
@@ -489,8 +482,6 @@ main {
 /* -=-=-=-=-=-=-==-=<< MAIN_FEATURES >>-=-=-=-=-=-=-=-=- */
 .features {
     background-color: #3a454d;
-    height: 732px;
-    padding-top: 85px;
 }
 .features .row {
     flex-wrap: wrap;
@@ -522,10 +513,9 @@ main {
 /* -=-=-=-=-=-=-==-=<< MAIN_TOUCH >>-=-=-=-=-=-=-=-=- */
 .touch {
     background-color: white;
-    height: 806px;
     background-image: url(images/img\ \(1\).png);
     background-repeat: no-repeat;
-    background-position-y: 100px;
+    background-position-y: 180px;
     background-position-x: center;
 }
 
@@ -594,26 +584,35 @@ form textarea {
 
 /* -=-=-=-=-=-=-==-=<< FOOTER >>-=-=-=-=-=-=-=-=- */
 .footer {
-    height: 95px;
     background-color: #3a454d;
-    line-height: 95px;
+    line-height: 33px;
     font-family: 'Open Sans', sans-serif;
+    padding-top: 31px;
+    padding-bottom: 31px;
 }
 
 .footer p {
     color: white;
 }
 
-.footer ul {
+.footer-row {
     height: 100%;
     display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.footer-col {
+    height: 100%;
+    width: calc(100%/5);
     flex-direction: row-reverse;
     align-items: center;
 }
+
 .footer a {
     display: block;
-    height: 48px;
-    width: 48px;
+    width: 100%;
+    height: 100%;
 }
 
 
